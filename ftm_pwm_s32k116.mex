@@ -324,7 +324,7 @@
                      </config_set>
                   </instance>
                   <instance name="flexTimer_pwm_2" uuid="c40a4e62-629f-431e-9382-108b3b71ece0" type="flexTimer_pwm" type_id="ftm_pwm" mode="general" peripheral="FTM_1" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
-                     <config_set name="ftm_pwm" quick_selection="default_value">
+                     <config_set name="ftm_pwm">
                         <struct name="ftmPwmUserConfig">
                            <struct name="ftmPwmInitConfig">
                               <struct name="ftmPwmClkCfg">
@@ -383,7 +383,74 @@
                                     </array>
                                  </struct>
                                  <struct name="ftmPwmIndptChnCfg">
-                                    <array name="pwmIndependentChannelConfig"/>
+                                    <array name="pwmIndependentChannelConfig">
+                                       <struct name="0">
+                                          <setting name="ftmpwmIndptName" value="flexTimer_pwm_2_IndependentChannelConfig0"/>
+                                          <setting name="ftmPwmIndptHwChnId" value="0"/>
+                                          <setting name="polarity" value="FTM_POLARITY_LOW"/>
+                                          <setting name="uDutyCyclePercent" value="0x4000"/>
+                                          <setting name="enableExternalTrigger" value="false"/>
+                                          <setting name="safeState" value="FTM_LOW_STATE"/>
+                                          <setting name="enableSecondChannelOutput" value="false"/>
+                                          <setting name="secondChannelPolarity" value="FTM_MAIN_INVERTED"/>
+                                          <setting name="IndptdeadTimeEn" value="false"/>
+                                       </struct>
+                                       <struct name="1">
+                                          <setting name="ftmpwmIndptName" value="flexTimer_pwm_2_IndependentChannelConfig1"/>
+                                          <setting name="ftmPwmIndptHwChnId" value="1"/>
+                                          <setting name="polarity" value="FTM_POLARITY_LOW"/>
+                                          <setting name="uDutyCyclePercent" value="0x4000"/>
+                                          <setting name="enableExternalTrigger" value="false"/>
+                                          <setting name="safeState" value="FTM_LOW_STATE"/>
+                                          <setting name="enableSecondChannelOutput" value="false"/>
+                                          <setting name="secondChannelPolarity" value="FTM_MAIN_INVERTED"/>
+                                          <setting name="IndptdeadTimeEn" value="false"/>
+                                       </struct>
+                                       <struct name="2">
+                                          <setting name="ftmpwmIndptName" value="flexTimer_pwm_2_IndependentChannelConfig2"/>
+                                          <setting name="ftmPwmIndptHwChnId" value="2"/>
+                                          <setting name="polarity" value="FTM_POLARITY_LOW"/>
+                                          <setting name="uDutyCyclePercent" value="0x4000"/>
+                                          <setting name="enableExternalTrigger" value="false"/>
+                                          <setting name="safeState" value="FTM_LOW_STATE"/>
+                                          <setting name="enableSecondChannelOutput" value="false"/>
+                                          <setting name="secondChannelPolarity" value="FTM_MAIN_INVERTED"/>
+                                          <setting name="IndptdeadTimeEn" value="false"/>
+                                       </struct>
+                                       <struct name="3">
+                                          <setting name="ftmpwmIndptName" value="flexTimer_pwm_2_IndependentChannelConfig3"/>
+                                          <setting name="ftmPwmIndptHwChnId" value="3"/>
+                                          <setting name="polarity" value="FTM_POLARITY_LOW"/>
+                                          <setting name="uDutyCyclePercent" value="0x4000"/>
+                                          <setting name="enableExternalTrigger" value="false"/>
+                                          <setting name="safeState" value="FTM_LOW_STATE"/>
+                                          <setting name="enableSecondChannelOutput" value="false"/>
+                                          <setting name="secondChannelPolarity" value="FTM_MAIN_INVERTED"/>
+                                          <setting name="IndptdeadTimeEn" value="false"/>
+                                       </struct>
+                                       <struct name="4">
+                                          <setting name="ftmpwmIndptName" value="flexTimer_pwm_2_IndependentChannelConfig4"/>
+                                          <setting name="ftmPwmIndptHwChnId" value="5"/>
+                                          <setting name="polarity" value="FTM_POLARITY_LOW"/>
+                                          <setting name="uDutyCyclePercent" value="0x4000"/>
+                                          <setting name="enableExternalTrigger" value="false"/>
+                                          <setting name="safeState" value="FTM_LOW_STATE"/>
+                                          <setting name="enableSecondChannelOutput" value="false"/>
+                                          <setting name="secondChannelPolarity" value="FTM_MAIN_INVERTED"/>
+                                          <setting name="IndptdeadTimeEn" value="false"/>
+                                       </struct>
+                                       <struct name="5">
+                                          <setting name="ftmpwmIndptName" value="flexTimer_pwm_2_IndependentChannelConfig5"/>
+                                          <setting name="ftmPwmIndptHwChnId" value="6"/>
+                                          <setting name="polarity" value="FTM_POLARITY_LOW"/>
+                                          <setting name="uDutyCyclePercent" value="0x4000"/>
+                                          <setting name="enableExternalTrigger" value="false"/>
+                                          <setting name="safeState" value="FTM_LOW_STATE"/>
+                                          <setting name="enableSecondChannelOutput" value="false"/>
+                                          <setting name="secondChannelPolarity" value="FTM_MAIN_INVERTED"/>
+                                          <setting name="IndptdeadTimeEn" value="false"/>
+                                       </struct>
+                                    </array>
                                  </struct>
                                  <struct name="ftmPwmCombChnCfg">
                                     <array name="pwmCombinedChannelConfig"/>

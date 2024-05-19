@@ -37,6 +37,7 @@ int main(void)
 {
     /* Write your local variable definition here */
     ftm_state_t ftmStateStruct;
+    ftm_state_t ftmStateStruct2;
     uint16_t dutyCycle = flexTimer_pwm_1_IndependentChannelsConfig[0].uDutyCyclePercent;
 
     /* Initialize clock module */
@@ -49,8 +50,15 @@ int main(void)
     /* Initialize FTM instance */
     FTM_DRV_Init(INST_FLEXTIMER_PWM_1, &flexTimer_pwm_1_InitConfig, &ftmStateStruct);
 
+
+    /* Initialize FTM instance */
+    FTM_DRV_Init(INST_FLEXTIMER_PWM_2, &flexTimer_pwm_2_InitConfig, &ftmStateStruct2);
+
     /* Initialize FTM PWM channel */
     FTM_DRV_InitPwm(INST_FLEXTIMER_PWM_1, &flexTimer_pwm_1_PwmConfig);
+
+    /* Initialize FTM PWM channel */
+    FTM_DRV_InitPwm(INST_FLEXTIMER_PWM_2, &flexTimer_pwm_2_PwmConfig);
 
     /* Infinite loop */
     for ( ;; )

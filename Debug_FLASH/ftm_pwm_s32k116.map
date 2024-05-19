@@ -588,6 +588,41 @@ Discarded input sections
  .debug_macro   0x00000000       0x22 ./board/peripherals_flexTimer_pwm_1.o
  .debug_macro   0x00000000       0xcc ./board/peripherals_flexTimer_pwm_1.o
  .debug_macro   0x00000000       0x10 ./board/peripherals_flexTimer_pwm_1.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .group         0x00000000        0x8 ./board/peripherals_flexTimer_pwm_2.o
+ .text          0x00000000        0x0 ./board/peripherals_flexTimer_pwm_2.o
+ .data          0x00000000        0x0 ./board/peripherals_flexTimer_pwm_2.o
+ .bss           0x00000000        0x0 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000      0x8bc ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000      0x16d ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x10 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x73 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x16 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x22 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x4f ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x51 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0xef ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x6a ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000      0x1df ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000     0xc464 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000      0x9f3 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x22 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0xcc ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x00000000       0x10 ./board/peripherals_flexTimer_pwm_2.o
  .group         0x00000000        0x8 ./board/pin_mux.o
  .group         0x00000000        0x8 ./board/pin_mux.o
  .group         0x00000000        0x8 ./board/pin_mux.o
@@ -619,6 +654,7 @@ Discarded input sections
  .debug_macro   0x00000000     0xc464 ./board/pin_mux.o
  .debug_macro   0x00000000      0x9f3 ./board/pin_mux.o
  .debug_macro   0x00000000       0x22 ./board/pin_mux.o
+ .group         0x00000000        0x8 ./src/main.o
  .group         0x00000000        0x8 ./src/main.o
  .group         0x00000000        0x8 ./src/main.o
  .group         0x00000000        0x8 ./src/main.o
@@ -803,6 +839,7 @@ LOAD ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
 LOAD ./SDK/rtos/osif/osif_baremetal.o
 LOAD ./board/clock_config.o
 LOAD ./board/peripherals_flexTimer_pwm_1.o
+LOAD ./board/peripherals_flexTimer_pwm_2.o
 LOAD ./board/pin_mux.o
 LOAD ./src/main.o
 START GROUP
@@ -836,7 +873,7 @@ LOAD c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .FlashConfig   0x00000400       0x10 ./Project_Settings/Startup_Code/startup_S32K116.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x2384
+.text           0x00000410     0x23a0
                 0x00000410                . = ALIGN (0x4)
  *(.text)
  .text          0x00000410       0x60 ./Project_Settings/Startup_Code/startup_S32K116.o
@@ -994,65 +1031,65 @@ LOAD c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .text.OSIF_TimeDelay
                 0x00002520       0x64 ./SDK/rtos/osif/osif_baremetal.o
                 0x00002520                OSIF_TimeDelay
- .text.main     0x00002584       0x7c ./src/main.o
+ .text.main     0x00002584       0x98 ./src/main.o
                 0x00002584                main
  *(.rodata)
  *(.rodata*)
  .rodata.clockNameMappings
-                0x00002600       0x8a ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
-                0x00002600                clockNameMappings
- *fill*         0x0000268a        0x2 
+                0x0000261c       0x8a ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                0x0000261c                clockNameMappings
+ *fill*         0x000026a6        0x2 
  .rodata.maxSysClksInRUN.6132
-                0x0000268c       0x54 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                0x000026a8       0x54 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
  .rodata.maxSysClksInVLPR.6131
-                0x000026e0       0x54 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                0x000026fc       0x54 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
  .rodata.peripheralFeaturesList
-                0x00002734       0x45 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
-                0x00002734                peripheralFeaturesList
- *fill*         0x00002779        0x3 
+                0x00002750       0x45 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+                0x00002750                peripheralFeaturesList
+ *fill*         0x00002795        0x3 
  .rodata.g_ftmBase
-                0x0000277c        0x8 ./SDK/platform/drivers/src/ftm/ftm_common.o
-                0x0000277c                g_ftmBase
+                0x00002798        0x8 ./SDK/platform/drivers/src/ftm/ftm_common.o
+                0x00002798                g_ftmBase
  .rodata.g_ftmExtClockSel
-                0x00002784        0x2 ./SDK/platform/drivers/src/ftm/ftm_common.o
- *fill*         0x00002786        0x2 
+                0x000027a0        0x2 ./SDK/platform/drivers/src/ftm/ftm_common.o
+ *fill*         0x000027a2        0x2 
  .rodata.g_ftmOverflowIrqId
-                0x00002788        0x2 ./SDK/platform/drivers/src/ftm/ftm_common.o
-                0x00002788                g_ftmOverflowIrqId
+                0x000027a4        0x2 ./SDK/platform/drivers/src/ftm/ftm_common.o
+                0x000027a4                g_ftmOverflowIrqId
  *(.init)
- *fill*         0x0000278a        0x2 
- .init          0x0000278c        0x4 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x0000278c                _init
+ *fill*         0x000027a6        0x2 
+ .init          0x000027a8        0x4 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x000027a8                _init
  *(.fini)
- .fini          0x00002790        0x4 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
-                0x00002790                _fini
+ .fini          0x000027ac        0x4 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crti.o
+                0x000027ac                _fini
  *(.eh_frame)
-                0x00002794                . = ALIGN (0x4)
+                0x000027b0                . = ALIGN (0x4)
 
-.glue_7         0x00002794        0x0
- .glue_7        0x00002794        0x0 linker stubs
+.glue_7         0x000027b0        0x0
+ .glue_7        0x000027b0        0x0 linker stubs
 
-.glue_7t        0x00002794        0x0
- .glue_7t       0x00002794        0x0 linker stubs
+.glue_7t        0x000027b0        0x0
+ .glue_7t       0x000027b0        0x0 linker stubs
 
-.vfp11_veneer   0x00002794        0x0
- .vfp11_veneer  0x00002794        0x0 linker stubs
+.vfp11_veneer   0x000027b0        0x0
+ .vfp11_veneer  0x000027b0        0x0 linker stubs
 
-.v4_bx          0x00002794        0x0
- .v4_bx         0x00002794        0x0 linker stubs
+.v4_bx          0x000027b0        0x0
+ .v4_bx         0x000027b0        0x0 linker stubs
 
-.iplt           0x00002794        0x0
- .iplt          0x00002794        0x0 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.iplt           0x000027b0        0x0
+ .iplt          0x000027b0        0x0 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.rel.dyn        0x00002794        0x0
- .rel.iplt      0x00002794        0x0 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.rel.dyn        0x000027b0        0x0
+ .rel.iplt      0x000027b0        0x0 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.ARM            0x00002794        0x0
-                0x00002794                __exidx_start = .
+.ARM            0x000027b0        0x0
+                0x000027b0                __exidx_start = .
  *(.ARM.exidx*)
-                0x00002794                __exidx_end = .
-                0x00002794                __etext = .
-                0x00002794                __DATA_ROM = .
+                0x000027b0                __exidx_end = .
+                0x000027b0                __etext = .
+                0x000027b0                __DATA_ROM = .
 
 .interrupts_ram
                 0x20000000       0xc0
@@ -1068,7 +1105,7 @@ LOAD c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
                 0x20000000                __VECTOR_RAM = DEFINED (__flash_vector_table__)?ORIGIN (m_interrupts):__VECTOR_RAM__
                 0x000000c0                __RAM_VECTOR_TABLE_SIZE = DEFINED (__flash_vector_table__)?0x0:(__interrupts_ram_end__ - __interrupts_ram_start__)
 
-.data           0x200000c0      0x1b4 load address 0x00002794
+.data           0x200000c0      0x2ac load address 0x000027b0
                 0x200000c0                . = ALIGN (0x4)
                 0x200000c0                __DATA_RAM = .
                 0x200000c0                __data_start__ = .
@@ -1100,39 +1137,49 @@ LOAD c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .data.flexTimer_pwm_1_PwmConfig
                 0x20000244       0x18 ./board/peripherals_flexTimer_pwm_1.o
                 0x20000244                flexTimer_pwm_1_PwmConfig
+ .data.flexTimer_pwm_2_IndependentChannelsConfig
+                0x2000025c       0x3c ./board/peripherals_flexTimer_pwm_2.o
+                0x2000025c                flexTimer_pwm_2_IndependentChannelsConfig
+ .data.flexTimer_pwm_2_InitConfig
+                0x20000298       0x12 ./board/peripherals_flexTimer_pwm_2.o
+                0x20000298                flexTimer_pwm_2_InitConfig
+ *fill*         0x200002aa        0x2 
+ .data.flexTimer_pwm_2_PwmConfig
+                0x200002ac       0x18 ./board/peripherals_flexTimer_pwm_2.o
+                0x200002ac                flexTimer_pwm_2_PwmConfig
  .data.g_pin_mux_InitConfigArr0
-                0x2000025c       0x18 ./board/pin_mux.o
-                0x2000025c                g_pin_mux_InitConfigArr0
-                0x20000274                . = ALIGN (0x4)
-                0x20000274                __data_end__ = .
-                0x00002948                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
-                0x00002948                __CODE_ROM = __DATA_END
+                0x200002c4       0xa8 ./board/pin_mux.o
+                0x200002c4                g_pin_mux_InitConfigArr0
+                0x2000036c                . = ALIGN (0x4)
+                0x2000036c                __data_end__ = .
+                0x00002a5c                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+                0x00002a5c                __CODE_ROM = __DATA_END
 
-.igot.plt       0x20000274        0x0 load address 0x00002948
- .igot.plt      0x20000274        0x0 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
+.igot.plt       0x2000036c        0x0 load address 0x00002a5c
+ .igot.plt      0x2000036c        0x0 c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m/crtbegin.o
 
-.code           0x20000274        0x0 load address 0x00002948
-                0x20000274                . = ALIGN (0x4)
-                0x20000274                __CODE_RAM = .
-                0x20000274                __code_start__ = .
-                0x20000274                __code_ram_start__ = .
+.code           0x2000036c        0x0 load address 0x00002a5c
+                0x2000036c                . = ALIGN (0x4)
+                0x2000036c                __CODE_RAM = .
+                0x2000036c                __code_start__ = .
+                0x2000036c                __code_ram_start__ = .
  *(.code_ram)
-                0x20000274                . = ALIGN (0x4)
-                0x20000274                __code_end__ = .
-                0x20000274                __code_ram_end__ = .
-                0x00002948                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
-                0x00002948                __CUSTOM_ROM = __CODE_END
+                0x2000036c                . = ALIGN (0x4)
+                0x2000036c                __code_end__ = .
+                0x2000036c                __code_ram_end__ = .
+                0x00002a5c                __CODE_END = (__CODE_ROM + (__code_end__ - __code_start__))
+                0x00002a5c                __CUSTOM_ROM = __CODE_END
 
 .customSectionBlock
-                0x1ffffc00        0x0 load address 0x00002948
+                0x1ffffc00        0x0 load address 0x00002a5c
                 0x1ffffc00                __customSectionStart = .
                 0x1ffffc00                __customSection_start__ = .
  *(.customSection)
                 0x1ffffc00                __customSection_end__ = .
-                0x00002948                __CUSTOM_END = (__CUSTOM_ROM + (__customSection_end__ - __customSection_start__))
-                0x00002948                __rom_end = __CUSTOM_END
+                0x00002a5c                __CUSTOM_END = (__CUSTOM_ROM + (__customSection_end__ - __customSection_start__))
+                0x00002a5c                __rom_end = __CUSTOM_END
 
-.bss            0x200020c0       0x48
+.bss            0x200020c0       0x58
                 0x200020c0                . = ALIGN (0x4)
                 0x200020c0                __BSS_START = .
                 0x200020c0                __bss_start__ = .
@@ -1162,24 +1209,27 @@ LOAD c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .bss.flexTimer_pwm_1_FaultConfig
                 0x200020f8       0x10 ./board/peripherals_flexTimer_pwm_1.o
                 0x200020f8                flexTimer_pwm_1_FaultConfig
+ .bss.flexTimer_pwm_2_FaultConfig
+                0x20002108       0x10 ./board/peripherals_flexTimer_pwm_2.o
+                0x20002108                flexTimer_pwm_2_FaultConfig
  *(COMMON)
-                0x20002108                . = ALIGN (0x4)
-                0x20002108                __bss_end__ = .
-                0x20002108                __BSS_END = .
+                0x20002118                . = ALIGN (0x4)
+                0x20002118                __bss_end__ = .
+                0x20002118                __BSS_END = .
 
-.heap           0x20002108      0x200
-                0x20002108                . = ALIGN (0x8)
-                0x20002108                __end__ = .
-                0x20002108                __heap_start__ = .
+.heap           0x20002118      0x200
+                0x20002118                . = ALIGN (0x8)
+                0x20002118                __end__ = .
+                0x20002118                __heap_start__ = .
                 [!provide]                PROVIDE (end, .)
                 [!provide]                PROVIDE (_end, .)
                 [!provide]                PROVIDE (__end, .)
-                0x20002108                __HeapBase = .
-                0x20002308                . = (. + HEAP_SIZE)
- *fill*         0x20002108      0x200 
-                0x20002308                __HeapLimit = .
-                0x20002308                __heap_limit = .
-                0x20002308                __heap_end__ = .
+                0x20002118                __HeapBase = .
+                0x20002318                . = (. + HEAP_SIZE)
+ *fill*         0x20002118      0x200 
+                0x20002318                __HeapLimit = .
+                0x20002318                __heap_limit = .
+                0x20002318                __heap_end__ = .
                 0x20003800                __StackTop = (ORIGIN (m_data_2) + LENGTH (m_data_2))
                 0x20003600                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20003800                PROVIDE (__stack, __StackTop)
@@ -1224,18 +1274,20 @@ LOAD c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/g
  .ARM.attributes
                 0x0000025f       0x32 ./board/peripherals_flexTimer_pwm_1.o
  .ARM.attributes
-                0x00000291       0x32 ./board/pin_mux.o
+                0x00000291       0x32 ./board/peripherals_flexTimer_pwm_2.o
  .ARM.attributes
-                0x000002c3       0x32 ./src/main.o
+                0x000002c3       0x32 ./board/pin_mux.o
  .ARM.attributes
-                0x000002f5       0x1e c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+                0x000002f5       0x32 ./src/main.o
  .ARM.attributes
-                0x00000313       0x1e c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
+                0x00000327       0x1e c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000345       0x1e c:/nxp/s32ds_3.4/s32ds/build_tools/gcc_v6.3/gcc-6.3-arm32-eabi/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
                 0x00000001                ASSERT ((__rom_end <= (ORIGIN (m_text) + LENGTH (m_text))), Region m_text overflowed!)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data_2 overflowed with stack and heap)
 OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
 
-.debug_line     0x00000000     0x5d2e
+.debug_line     0x00000000     0x6166
  .debug_line    0x00000000       0xcf ./Project_Settings/Startup_Code/startup_S32K116.o
  .debug_line    0x000000cf      0x41f ./SDK/platform/devices/S32K116/startup/system_S32K116.o
  .debug_line    0x000004ee      0x3aa ./SDK/platform/devices/startup.o
@@ -1249,10 +1301,11 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .debug_line    0x00004494      0x5fa ./SDK/rtos/osif/osif_baremetal.o
  .debug_line    0x00004a8e      0x451 ./board/clock_config.o
  .debug_line    0x00004edf      0x434 ./board/peripherals_flexTimer_pwm_1.o
- .debug_line    0x00005313      0x3ea ./board/pin_mux.o
- .debug_line    0x000056fd      0x631 ./src/main.o
+ .debug_line    0x00005313      0x434 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_line    0x00005747      0x3ea ./board/pin_mux.o
+ .debug_line    0x00005b31      0x635 ./src/main.o
 
-.debug_info     0x00000000    0x12936
+.debug_info     0x00000000    0x13548
  .debug_info    0x00000000       0x26 ./Project_Settings/Startup_Code/startup_S32K116.o
  .debug_info    0x00000026      0x3f3 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
  .debug_info    0x00000419      0x295 ./SDK/platform/devices/startup.o
@@ -1266,10 +1319,11 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .debug_info    0x0000d53b      0xa6e ./SDK/rtos/osif/osif_baremetal.o
  .debug_info    0x0000dfa9     0x114d ./board/clock_config.o
  .debug_info    0x0000f0f6      0xb99 ./board/peripherals_flexTimer_pwm_1.o
- .debug_info    0x0000fc8f      0x403 ./board/pin_mux.o
- .debug_info    0x00010092     0x28a4 ./src/main.o
+ .debug_info    0x0000fc8f      0xb9a ./board/peripherals_flexTimer_pwm_2.o
+ .debug_info    0x00010829      0x403 ./board/pin_mux.o
+ .debug_info    0x00010c2c     0x291c ./src/main.o
 
-.debug_abbrev   0x00000000     0x1dcb
+.debug_abbrev   0x00000000     0x1f26
  .debug_abbrev  0x00000000       0x14 ./Project_Settings/Startup_Code/startup_S32K116.o
  .debug_abbrev  0x00000014      0x14c ./SDK/platform/devices/S32K116/startup/system_S32K116.o
  .debug_abbrev  0x00000160       0xe1 ./SDK/platform/devices/startup.o
@@ -1283,10 +1337,11 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .debug_abbrev  0x0000151b      0x30c ./SDK/rtos/osif/osif_baremetal.o
  .debug_abbrev  0x00001827      0x125 ./board/clock_config.o
  .debug_abbrev  0x0000194c      0x14e ./board/peripherals_flexTimer_pwm_1.o
- .debug_abbrev  0x00001a9a       0xcd ./board/pin_mux.o
- .debug_abbrev  0x00001b67      0x264 ./src/main.o
+ .debug_abbrev  0x00001a9a      0x15b ./board/peripherals_flexTimer_pwm_2.o
+ .debug_abbrev  0x00001bf5       0xcd ./board/pin_mux.o
+ .debug_abbrev  0x00001cc2      0x264 ./src/main.o
 
-.debug_aranges  0x00000000      0x528
+.debug_aranges  0x00000000      0x540
  .debug_aranges
                 0x00000000       0x20 ./Project_Settings/Startup_Code/startup_S32K116.o
  .debug_aranges
@@ -1314,40 +1369,44 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .debug_aranges
                 0x000004d8       0x18 ./board/peripherals_flexTimer_pwm_1.o
  .debug_aranges
-                0x000004f0       0x18 ./board/pin_mux.o
+                0x000004f0       0x18 ./board/peripherals_flexTimer_pwm_2.o
  .debug_aranges
-                0x00000508       0x20 ./src/main.o
+                0x00000508       0x18 ./board/pin_mux.o
+ .debug_aranges
+                0x00000520       0x20 ./src/main.o
 
-.debug_str      0x00000000    0x619d8
- .debug_str     0x00000000       0xba ./Project_Settings/Startup_Code/startup_S32K116.o
- .debug_str     0x000000ba    0x569a0 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
+.debug_str      0x00000000    0x61a96
+ .debug_str     0x00000000       0x9b ./Project_Settings/Startup_Code/startup_S32K116.o
+ .debug_str     0x0000009b    0x569a0 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
                               0x56b23 (size before relaxing)
- .debug_str     0x00056a5a      0x399 ./SDK/platform/devices/startup.o
+ .debug_str     0x00056a3b      0x399 ./SDK/platform/devices/startup.o
                               0x56d11 (size before relaxing)
- .debug_str     0x00056df3     0x3ab7 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
+ .debug_str     0x00056dd4     0x3ab7 ./SDK/platform/drivers/src/clock/S32K1xx/clock_S32K1xx.o
                               0x5a590 (size before relaxing)
- .debug_str     0x0005a8aa     0x1d67 ./SDK/platform/drivers/src/ftm/ftm_common.o
+ .debug_str     0x0005a88b     0x1d67 ./SDK/platform/drivers/src/ftm/ftm_common.o
                               0x59812 (size before relaxing)
- .debug_str     0x0005c611       0xd9 ./SDK/platform/drivers/src/ftm/ftm_hw_access.o
+ .debug_str     0x0005c5f2       0xd9 ./SDK/platform/drivers/src/ftm/ftm_hw_access.o
                               0x57ed7 (size before relaxing)
- .debug_str     0x0005c6ea      0xacc ./SDK/platform/drivers/src/ftm/ftm_pwm_driver.o
+ .debug_str     0x0005c6cb      0xacc ./SDK/platform/drivers/src/ftm/ftm_pwm_driver.o
                               0x591aa (size before relaxing)
- .debug_str     0x0005d1b6      0x1cc ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
+ .debug_str     0x0005d197      0x1cc ./SDK/platform/drivers/src/interrupt/interrupt_manager.o
                               0x57084 (size before relaxing)
- .debug_str     0x0005d382      0x948 ./SDK/platform/drivers/src/pins/pins_driver.o
+ .debug_str     0x0005d363      0x948 ./SDK/platform/drivers/src/pins/pins_driver.o
                               0x57dd5 (size before relaxing)
- .debug_str     0x0005dcca       0x8a ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
+ .debug_str     0x0005dcab       0x8a ./SDK/platform/drivers/src/pins/pins_port_hw_access.o
                               0x57144 (size before relaxing)
- .debug_str     0x0005dd54      0x258 ./SDK/rtos/osif/osif_baremetal.o
+ .debug_str     0x0005dd35      0x258 ./SDK/rtos/osif/osif_baremetal.o
                               0x57c22 (size before relaxing)
- .debug_str     0x0005dfac       0xda ./board/clock_config.o
-                              0x586e2 (size before relaxing)
- .debug_str     0x0005e086       0xcd ./board/peripherals_flexTimer_pwm_1.o
-                              0x582fc (size before relaxing)
- .debug_str     0x0005e153       0x53 ./board/pin_mux.o
-                              0x56ffc (size before relaxing)
- .debug_str     0x0005e1a6     0x3832 ./src/main.o
-                              0x5ddc6 (size before relaxing)
+ .debug_str     0x0005df8d       0xda ./board/clock_config.o
+                              0x586c3 (size before relaxing)
+ .debug_str     0x0005e067       0xcd ./board/peripherals_flexTimer_pwm_1.o
+                              0x582dd (size before relaxing)
+ .debug_str     0x0005e134       0xcd ./board/peripherals_flexTimer_pwm_2.o
+                              0x582dd (size before relaxing)
+ .debug_str     0x0005e201       0x53 ./board/pin_mux.o
+                              0x56fdd (size before relaxing)
+ .debug_str     0x0005e254     0x3842 ./src/main.o
+                              0x5de5d (size before relaxing)
 
 .debug_loc      0x00000000     0x937b
  .debug_loc     0x00000000       0xc0 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
@@ -1375,7 +1434,7 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .debug_ranges  0x00000a78       0x90 ./SDK/rtos/osif/osif_baremetal.o
  .debug_ranges  0x00000b08       0x10 ./src/main.o
 
-.debug_macro    0x00000000    0x1bca1
+.debug_macro    0x00000000    0x1bdb3
  .debug_macro   0x00000000       0xb7 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
  .debug_macro   0x000000b7      0x8bc ./SDK/platform/devices/S32K116/startup/system_S32K116.o
  .debug_macro   0x00000973       0x10 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
@@ -1411,25 +1470,27 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .debug_macro   0x0001ae59       0xda ./board/clock_config.o
  .debug_macro   0x0001af33       0x16 ./board/clock_config.o
  .debug_macro   0x0001af49       0xf9 ./board/peripherals_flexTimer_pwm_1.o
- .debug_macro   0x0001b042       0xdb ./board/pin_mux.o
- .debug_macro   0x0001b11d      0x23c ./src/main.o
- .debug_macro   0x0001b359       0x10 ./src/main.o
- .debug_macro   0x0001b369       0x52 ./src/main.o
- .debug_macro   0x0001b3bb       0x3c ./src/main.o
- .debug_macro   0x0001b3f7       0x9c ./src/main.o
- .debug_macro   0x0001b493       0x16 ./src/main.o
- .debug_macro   0x0001b4a9       0x35 ./src/main.o
- .debug_macro   0x0001b4de      0x330 ./src/main.o
- .debug_macro   0x0001b80e       0x10 ./src/main.o
- .debug_macro   0x0001b81e       0x52 ./src/main.o
- .debug_macro   0x0001b870       0x1f ./src/main.o
- .debug_macro   0x0001b88f       0x43 ./src/main.o
- .debug_macro   0x0001b8d2       0x20 ./src/main.o
- .debug_macro   0x0001b8f2      0x1a3 ./src/main.o
- .debug_macro   0x0001ba95       0x10 ./src/main.o
- .debug_macro   0x0001baa5       0xb6 ./src/main.o
- .debug_macro   0x0001bb5b       0x16 ./src/main.o
- .debug_macro   0x0001bb71      0x130 ./src/main.o
+ .debug_macro   0x0001b042       0xf9 ./board/peripherals_flexTimer_pwm_2.o
+ .debug_macro   0x0001b13b       0xdb ./board/pin_mux.o
+ .debug_macro   0x0001b216      0x245 ./src/main.o
+ .debug_macro   0x0001b45b       0x10 ./src/main.o
+ .debug_macro   0x0001b46b       0x10 ./src/main.o
+ .debug_macro   0x0001b47b       0x52 ./src/main.o
+ .debug_macro   0x0001b4cd       0x3c ./src/main.o
+ .debug_macro   0x0001b509       0x9c ./src/main.o
+ .debug_macro   0x0001b5a5       0x16 ./src/main.o
+ .debug_macro   0x0001b5bb       0x35 ./src/main.o
+ .debug_macro   0x0001b5f0      0x330 ./src/main.o
+ .debug_macro   0x0001b920       0x10 ./src/main.o
+ .debug_macro   0x0001b930       0x52 ./src/main.o
+ .debug_macro   0x0001b982       0x1f ./src/main.o
+ .debug_macro   0x0001b9a1       0x43 ./src/main.o
+ .debug_macro   0x0001b9e4       0x20 ./src/main.o
+ .debug_macro   0x0001ba04      0x1a3 ./src/main.o
+ .debug_macro   0x0001bba7       0x10 ./src/main.o
+ .debug_macro   0x0001bbb7       0xb6 ./src/main.o
+ .debug_macro   0x0001bc6d       0x16 ./src/main.o
+ .debug_macro   0x0001bc83      0x130 ./src/main.o
 
 .comment        0x00000000       0xa0
  .comment       0x00000000       0xa0 ./SDK/platform/devices/S32K116/startup/system_S32K116.o
@@ -1445,6 +1506,7 @@ OUTPUT(ftm_pwm_s32k116.elf elf32-littlearm)
  .comment       0x000000a0       0xa1 ./SDK/rtos/osif/osif_baremetal.o
  .comment       0x000000a0       0xa1 ./board/clock_config.o
  .comment       0x000000a0       0xa1 ./board/peripherals_flexTimer_pwm_1.o
+ .comment       0x000000a0       0xa1 ./board/peripherals_flexTimer_pwm_2.o
  .comment       0x000000a0       0xa1 ./board/pin_mux.o
  .comment       0x000000a0       0xa1 ./src/main.o
 

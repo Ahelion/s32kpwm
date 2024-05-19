@@ -6,16 +6,19 @@
 C_SRCS += \
 ../board/clock_config.c \
 ../board/peripherals_flexTimer_pwm_1.c \
+../board/peripherals_flexTimer_pwm_2.c \
 ../board/pin_mux.c 
 
 OBJS += \
 ./board/clock_config.o \
 ./board/peripherals_flexTimer_pwm_1.o \
+./board/peripherals_flexTimer_pwm_2.o \
 ./board/pin_mux.o 
 
 C_DEPS += \
 ./board/clock_config.d \
 ./board/peripherals_flexTimer_pwm_1.d \
+./board/peripherals_flexTimer_pwm_2.d \
 ./board/pin_mux.d 
 
 

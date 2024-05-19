@@ -36,6 +36,9 @@ extern ftm_pwm_fault_param_t flexTimer_pwm_2_FaultConfig;
 /* PWM configuration for flexTimer_pwm_2 */
 extern ftm_pwm_param_t flexTimer_pwm_2_PwmConfig;
 
+/* Channels configuration structure for the independent channels */
+extern ftm_independent_ch_param_t flexTimer_pwm_2_IndependentChannelsConfig[6];
+
 /* Global configuration of flexTimer */
 extern ftm_user_config_t flexTimer_pwm_2_InitConfig;
 
