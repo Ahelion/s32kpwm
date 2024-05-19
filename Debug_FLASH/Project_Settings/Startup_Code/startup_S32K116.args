@@ -1,0 +1,7 @@
+-c
+-x assembler-with-cpp
+-DSTART_FROM_FLASH
+-g3
+-mcpu=cortex-m0plus
+-specs=nosys.specs
+--sysroot="C:/NXP/S32DS_3.4/S32DS/build_tools/gcc_b1620/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
