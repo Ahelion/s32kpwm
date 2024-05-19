@@ -1,5 +1,7 @@
 -std=c99
 -DCPU_S32K116
+-I../SDK/rtos/osif
+-I../SDK/platform/pal/inc
 -I../SDK/platform/drivers/inc
 -I../SDK/platform/drivers/src/ftm
 -I"C:/NXP/S32DS_3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform"

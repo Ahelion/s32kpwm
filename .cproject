@@ -35,6 +35,8 @@
 								<option id="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format.1955866145" name="Debug format" superClass="com.freescale.s32ds.cross.gnu.tool.c.compiler.option.debugging.format" useByScannerDiscovery="true"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.libraries.568677591" name="Libraries support" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.libraries" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.c.compiler.option.target.libraries.newlib_noio" valueType="enumerated"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.490978286" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../SDK/rtos/osif"/>
+									<listOptionValue builtIn="false" value="../SDK/platform/pal/inc"/>
 									<listOptionValue builtIn="false" value="../SDK/platform/drivers/inc"/>
 									<listOptionValue builtIn="false" value="../SDK/platform/drivers/src/ftm"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform&quot;"/>
@@ -115,6 +117,8 @@
 								<option id="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level.1434354380" name="Debug Level" superClass="com.freescale.s32ds.cross.gnu.tool.assembler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.libraries.1310405172" name="Libraries support" superClass="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.libraries" useByScannerDiscovery="false" value="com.nxp.s32ds.cle.arm.mbs.arm32.bare.tool.assembler.option.target.libraries.newlib_noio" valueType="enumerated"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.both.asm.option.include.paths.437617213" name="Include paths (-I)" superClass="gnu.both.asm.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="../SDK/rtos/osif"/>
+									<listOptionValue builtIn="false" value="../SDK/platform/pal/inc"/>
 									<listOptionValue builtIn="false" value="../SDK/platform/drivers/inc"/>
 									<listOptionValue builtIn="false" value="../SDK/platform/drivers/src/ftm"/>
 									<listOptionValue builtIn="false" value="&quot;${S32_SDK_PATH}/platform&quot;"/>
@@ -175,7 +179,7 @@
 	<storageModule moduleId="org.eclipse.embsys" parent_project="true" register_architecture="" register_board="---  none ---" register_chip="S32K116" register_core="CortexM0P" register_vendor=""/>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="com.nxp.s32ds.cle.uct.core">
-		<sdkComponents>platform.driver.clock;platform.driver.interrupt_manager;platform.driver.pins;platform.driver.ftm_pwm</sdkComponents>
+		<sdkComponents>platform.driver.clock;platform.driver.interrupt_manager;platform.driver.pins;platform.driver.ftm_pwm;platform.pal.can_pal;platform.driver.osif;platform.driver.flexcan;platform.driver.edma</sdkComponents>
 	</storageModule>
 	<storageModule moduleId="com.nxp.s32ds.cle.uct.internal.core.toolchainSettings">
 		<COND_TOOLCHAIN_LIBRARIES/>
@@ -185,7 +189,7 @@
 		<COND_TOOLCHAIN_ASM_DEFINES/>
 	</storageModule>
 	<storageModule moduleId="com.nxp.s32ds.cle.uct.internal.core.toolchainScriptProfile">
-		<COND_TOOLCHAIN_COMPONENTS_OPTION>COPY=platform.driver.ftm_pwm</COND_TOOLCHAIN_COMPONENTS_OPTION>
+		<COND_TOOLCHAIN_COMPONENTS_OPTION>COPY=platform.pal.can_pal;platform.driver.ftm_pwm;platform.driver.flexcan</COND_TOOLCHAIN_COMPONENTS_OPTION>
 	</storageModule>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug_FLASH">

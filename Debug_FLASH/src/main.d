@@ -15,7 +15,11 @@ src/main.o: ../src/main.c C:/wk/work/s32kpwm/board/sdk_project_config.h \
  C:/NXP/S32DS_3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/drivers/inc/ftm_common.h \
  C:/NXP/S32DS_3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/callbacks.h \
  C:/wk/work/s32kpwm/board/peripherals_flexTimer_pwm_2.h \
- C:/NXP/S32DS_3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/rtos/osif/osif.h
+ C:/wk/work/s32kpwm/board/peripherals_can_pal_1.h \
+ ../SDK/platform/pal/inc/can_pal.h C:/wk/work/s32kpwm/board/can_pal_cfg.h \
+ ../SDK/platform/pal/inc/can_pal_mapping.h \
+ ../SDK/platform/drivers/inc/flexcan_driver.h ../SDK/rtos/osif/osif.h \
+ ../SDK/platform/drivers/inc/edma_driver.h
 
 C:/wk/work/s32kpwm/board/sdk_project_config.h:
 
@@ -51,4 +55,16 @@ C:/NXP/S32DS_3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/platform/devices/callba
 
 C:/wk/work/s32kpwm/board/peripherals_flexTimer_pwm_2.h:
 
-C:/NXP/S32DS_3.4/S32DS/software/S32SDK_S32K1XX_RTM_4.0.3/rtos/osif/osif.h:
+C:/wk/work/s32kpwm/board/peripherals_can_pal_1.h:
+
+../SDK/platform/pal/inc/can_pal.h:
+
+C:/wk/work/s32kpwm/board/can_pal_cfg.h:
+
+../SDK/platform/pal/inc/can_pal_mapping.h:
+
+../SDK/platform/drivers/inc/flexcan_driver.h:
+
+../SDK/rtos/osif/osif.h:
+
+../SDK/platform/drivers/inc/edma_driver.h:
