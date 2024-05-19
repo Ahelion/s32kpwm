@@ -25,7 +25,18 @@
 #include "osif.h"
 #include <stdio.h>
 
+
+    #define TX_MAILBOX  (1UL)
+    #define TX_MSG_ID   (0x123UL)
+    #define RX_MAILBOX  (0UL)
+    #define RX_MSG_ID   (0x124UL)
+
+
 volatile int exit_code = 0;
+
+
+static void can_init(void);
+
 
 /*!
   \brief The main function for the project.
@@ -40,6 +51,7 @@ int main(void)
     ftm_state_t ftmStateStruct2;
 
     uint8_t ii;
+    can_message_t recvMsg;
 
     uint16_t dutyCycle = flexTimer_pwm_1_IndependentChannelsConfig[0].uDutyCyclePercent;
 
@@ -63,6 +75,7 @@ int main(void)
     /* Initialize FTM PWM channel */
     FTM_DRV_InitPwm(INST_FLEXTIMER_PWM_2, &flexTimer_pwm_2_PwmConfig);
 
+    can_init();
 
     for(ii=0;ii<6;ii++)
     {
@@ -77,7 +90,7 @@ int main(void)
     /* Infinite loop */
     for ( ;; )
     {
-        dutyCycle += 50;
+        //dutyCycle += 50;
         if (dutyCycle > 0x4000U)
         {
             dutyCycle = 1U;
@@ -87,9 +100,46 @@ int main(void)
                                  FTM_PWM_UPDATE_IN_DUTY_CYCLE, dutyCycle,
                                  0U,
                                  true);
+
+        //can
+        /* Define receive buffer */
+
+
+        /* Start receiving data in RX_MAILBOX. */
+        CAN_Receive(&can_instance0, RX_MAILBOX, &recvMsg);
+
+        /* Wait until the previous FlexCAN receive is completed */
+        while(CAN_GetTransferStatus(&can_instance0, RX_MAILBOX) == STATUS_BUSY);
+
+        /* Check the received message ID and payload */
+        if(recvMsg.data[0] == 0x11)
+        {
+        	dutyCycle+=50;
+        }
+
         OSIF_TimeDelay(10);
     }
 
     return exit_code;
 }
+
+
+void can_init(void)
+{
+
+    can_buff_config_t buffCfg =  {
+        .enableFD = false,
+        .enableBRS = false,
+        .fdPadding = 0U,
+        .idType = CAN_MSG_ID_STD,
+        .isRemote = false
+    };
+
+    CAN_Init(&can_instance0, &can_config0);
+
+    /* Configure RX buffer with index RX_MAILBOX */
+    CAN_ConfigRxBuff(&can_instance0, RX_MAILBOX, &buffCfg, RX_MSG_ID);
+}
+
+
 /* END main */
